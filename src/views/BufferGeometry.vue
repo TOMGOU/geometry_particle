@@ -62,7 +62,7 @@ export default class BufferGeometry extends Vue {
     // 设置几何体attributes属性的位置属性
     this.geometry.attributes.position = attribue
     // 初始化贴图
-    const texture = new THREE.TextureLoader().load('/self/sprite.png')
+    const texture = new THREE.TextureLoader().load('/www/self/sprite.png')
     const material = new THREE.PointsMaterial({
       transparent: true,
       size: 7,
@@ -80,7 +80,7 @@ export default class BufferGeometry extends Vue {
     let lastLoaded1 = 0
     let lastLoaded2 = 0
     loader.load(
-      '/self/huge_alien.json',
+      '/www/self/huge_alien.json',
       (geo) => {
         let object = new THREE.Points(geo, material)
         geo.center()
@@ -97,7 +97,7 @@ export default class BufferGeometry extends Vue {
       }
     )
     loader.load(
-      '/self/huge_monster.json',
+      '/www/self/huge_monster.json',
       (geo) => {
         let object = new THREE.Points(geo, material)
         // geo.center()
@@ -114,7 +114,7 @@ export default class BufferGeometry extends Vue {
       }
     )
     loader.load(
-      '/self/huge_carton.json',
+      '/www/self/huge_carton.json',
       (geo) => {
         let object = new THREE.Points(geo, material)
         // geo.center()
@@ -131,7 +131,7 @@ export default class BufferGeometry extends Vue {
       }
     )
     loader.load(
-      '/self/huge_bottle.json',
+      '/www/self/huge_bottle.json',
       (geo) => {
         let object = new THREE.Points(geo, material)
         geo.center()
@@ -148,7 +148,7 @@ export default class BufferGeometry extends Vue {
       }
     )
     loader.load(
-      '/self/huge_wheel.json',
+      '/www/self/huge_wheel.json',
       (geo) => {
         let object = new THREE.Points(geo, material)
         geo.center()
@@ -165,7 +165,7 @@ export default class BufferGeometry extends Vue {
       }
     )
     loader.load(
-      '/self/huge_pressure.json',
+      '/www/self/huge_pressure.json',
       (geo) => {
         let object = new THREE.Points(geo, material)
         geo.center()
@@ -182,7 +182,7 @@ export default class BufferGeometry extends Vue {
       }
     )
     loader.load(
-      '/self/huge_suzanne.json',
+      '/www/self/huge_suzanne.json',
       (geo) => {
         let object = new THREE.Points(geo, material)
         geo.center()
@@ -199,7 +199,7 @@ export default class BufferGeometry extends Vue {
       }
     )
     loader.load(
-      '/self/huge_shaver.json',
+      '/www/self/huge_shaver.json',
       (geo) => {
         let object = new THREE.Points(geo, material)
         geo.center()
@@ -216,7 +216,7 @@ export default class BufferGeometry extends Vue {
       }
     )
     loader.load(
-      '/self/huge_gun.json',
+      '/www/self/huge_gun.json',
       (geo) => {
         let object = new THREE.Points(geo, material)
         geo.center()
@@ -233,7 +233,7 @@ export default class BufferGeometry extends Vue {
       }
     )
     loader.load(
-      '/self/huge_handgun.json',
+      '/www/self/huge_handgun.json',
       (geo) => {
         let object = new THREE.Points(geo, material)
         geo.center()
@@ -252,7 +252,7 @@ export default class BufferGeometry extends Vue {
     const loaderFont = new THREE.FontLoader()
     const font = loaderFont.load(
         // resource URL
-        '/self/fonts/optimer_bold.typeface.json',
+        '/www/self/fonts/optimer_bold.typeface.json',
         // onLoad callback
         (font) => {
             // do something with the font
