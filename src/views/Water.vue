@@ -22,7 +22,7 @@ export default class Geometry extends Vue {
     const loaderFont = new THREE.FontLoader()
     const font = loaderFont.load(
         // resource URL
-        '/www/self/fonts/optimer_bold.typeface.json',
+        '/self/fonts/optimer_bold.typeface.json',
         // onLoad callback
         (font) => {
             // do something with the font
@@ -61,7 +61,7 @@ export default class Geometry extends Vue {
 
     let textureLoader = new THREE.TextureLoader()
       // textureLoader.load( 'textures/floors/FloorsCheckerboard_S_Diffuse.jpg', function( map ) {
-    textureLoader.load('/www/self/2.jpg', function (map) {
+    textureLoader.load('/self/2.jpg', function (map) {
         // map.wrapS = THREE.RepeatWrapping;
         // map.wrapT = THREE.RepeatWrapping;
         // map.anisotropy = 16;
@@ -73,7 +73,7 @@ export default class Geometry extends Vue {
     let waterGeometry = new THREE.PlaneBufferGeometry(20, 20)
       // var flowMap = textureLoader.load( 'textures/water/Water_1_M_Flow.jpg' );
       // var flowMap = textureLoader.load( 'textures/water/clouds.jpg' );
-    let flowMap = textureLoader.load('/www/self/water/crystalize.jpg')
+    let flowMap = textureLoader.load('/self/water/crystalize.jpg')
       // var flowMap = textureLoader.load( 'textures/water/fibers.jpg' );
       // var flowMap = textureLoader.load( 'textures/water/pointilize.jpg' );
       // var flowMap = textureLoader.load( 'textures/water/ripple.jpg' );

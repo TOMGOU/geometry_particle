@@ -1,6 +1,6 @@
 const isProduction = process.env.RUN_ENV === 'production';
-const baseUrl = 'https://tomgou.github.io/geometry_particle/www';
+const baseUrl = '/www/';
 module.exports = {
-  baseUrl: baseUrl,
+  baseUrl: isProduction ? baseUrl : '/',
   outputDir: 'www',
 }

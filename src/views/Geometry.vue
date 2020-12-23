@@ -20,7 +20,7 @@ export default class Geometry extends Vue {
     // 初始化geometry
     const geometry = new THREE.Geometry()
     // 初始化贴图
-    const texture = new THREE.TextureLoader().load('/www/self/sprite.png')
+    const texture = new THREE.TextureLoader().load('/self/sprite.png')
     const material = new THREE.PointsMaterial({
       transparent: true,
       size: 5,
@@ -39,7 +39,7 @@ export default class Geometry extends Vue {
     // scene.add(particles)
     const loader = new THREE.BufferGeometryLoader()
     loader.load(
-      '/www/self/huge_gun.json',
+      '/self/huge_gun.json',
       (geo) => {
         let object = new THREE.Points(geo, material)
         geo.center()
@@ -52,7 +52,7 @@ export default class Geometry extends Vue {
     const loaderFont = new THREE.FontLoader()
     const font = loaderFont.load(
         // resource URL
-        '/www/self/fonts/optimer_bold.typeface.json',
+        '/self/fonts/optimer_bold.typeface.json',
         // onLoad callback
         (font) => {
             // do something with the font
@@ -84,7 +84,7 @@ export default class Geometry extends Vue {
      * 缓冲几何体数据加载器
      */
     // const loader = new THREE.JSONLoader();
-    // loader.load('/www/self/car.js', function (geo: any) {
+    // loader.load('/self/car.js', function (geo: any) {
     //   // 粒子数据
     //     let colors = [];
     // 		for (let i = 0; i < geo.vertices.length; i++) {

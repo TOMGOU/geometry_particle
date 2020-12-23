@@ -40,7 +40,7 @@ export default class Geometry extends Vue {
     let mixer: any
 
     const loader = new FBXLoader()
-    loader.load('/www/self/SambaDancing.fbx', (obj: any) => {
+    loader.load('/self/SambaDancing.fbx', (obj: any) => {
       // console.log('fbxobj:',obj)
       scene.add(obj)
       obj.translateY(-80)

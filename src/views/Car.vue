@@ -29,10 +29,10 @@ export default class Geometry extends Vue {
     const mtlLoader = new MTLLoader()
     const objLoader = new OBJLoader()
     // 车身
-    mtlLoader.load('/www/self/car.mtl', (materials: any) => {
+    mtlLoader.load('/self/car.mtl', (materials: any) => {
       materials.preload()
       objLoader.setMaterials(materials)
-      objLoader.load('/www/self/car.obj', (object: any) => {
+      objLoader.load('/self/car.obj', (object: any) => {
         scene.add(object)
         object.name = 'car_body'
         console.log(scene)
@@ -42,10 +42,10 @@ export default class Geometry extends Vue {
       })
     })
     // 车轮
-    mtlLoader.load('/www/self/front_wheel.mtl', (materials: any) => {
+    mtlLoader.load('/self/front_wheel.mtl', (materials: any) => {
       materials.preload()
       objLoader.setMaterials(materials)
-      objLoader.load('/www/self/front_wheel.obj', (object: any) => {
+      objLoader.load('/self/front_wheel.obj', (object: any) => {
         // 前左轮
         const frontLeft = object.clone()
         frontLeft.name = 'front_left'
